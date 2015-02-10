@@ -1,0 +1,28 @@
+{
+    "name": "mTest",
+    "version": "1.0.0",
+    "description": "Learning test nodejs with mochajs",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha test/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/guihknx/mTest.git"
+    },
+    "author": "Guilherme Henrique",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/guihknx/mTest/issues"
+    },
+    "homepage": "https://github.com/guihknx/mTest",
+    "dependencies": {
+        "chai": "^1.10.0"
+    },
+    "devDependencies": {
+        "mocha": "^2.1.0"
+    }
+}
