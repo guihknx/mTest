@@ -1,7 +1,7 @@
 var expect = require("chai").expect;
 var items = require("../lib/items.js").Items;
 var assertions = require('mocha').it
-// var assert = require('assert');
+var assert = require('assert');
 
 describe("Items", function(){
 	describe("#returnValid()", function(){
@@ -19,12 +19,23 @@ describe("Items", function(){
 			
 			var param = 5;
 
-			var result = items.returnValidByParams(param);
 
-			expect(result).to.be.equal(5).and.not.equal('Expect 5 :)');
+			var result = items.returnValidByParams(param);
+			console.log('RESULT ->',result);
+
+			expect(result).to.be.equal(5);
 		
 
 		});
-	});
+		it("should throw a exception if the value is invalid", function(){
+			
+			var param = 2;
 
+			var result = items.returnValidByParams(param);
+			console.log('RESULT ->',result);
+
+			expect(result).equals('Error thrown');
+
+		});
+	});
 });
