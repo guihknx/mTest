@@ -17,12 +17,11 @@ describe("Items", function(){
 	describe("#returnValidByParams", function(){
 		it("should return valid item value based in params", function(){
 			
-			var param = 2;
+			var param = 5;
 
 			var result = items.returnValidByParams(param);
 
-			expect(result).to.be.equal(5);
-			expect(result).to.not.equal('Expect 5 :)');
+			expect(result).to.be.equal(5).and.not.equal('Expect 5 :)');
 		
 
 		});
